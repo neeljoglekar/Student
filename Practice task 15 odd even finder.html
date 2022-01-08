@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <h1> Odd or Even Finder </h1>
+       Enter number: <input type="number" id="num">
+       <br><br>
+       <button onclick="show()"> Calculate</button>
+    </body>
+    <script>
+
+        function show(){
+            var num=document.getElementById("num").value
+            if (num%2==0){
+                alert("The number is even")
+            } else{
+                alert(" The number is odd")
+            }
+        }
+   </script>
+</html>
