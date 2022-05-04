@@ -1,0 +1,124 @@
+<html>
+    <style>
+        button{
+            font-family: sans-serif;
+            color: rgb(95, 90, 90);
+            text-align: center;
+            height: 50px;
+            width: 400px;
+            margin: 2px;
+            cursor: pointer;
+        }
+        #body{
+            background-color: rgb(182, 202, 220);
+        }
+        .heading{
+            text-align: center;
+        }
+        #img1{
+            height: 250px;
+            float: right;
+            width: 500px;
+            border: 25px;
+        }
+    </style>
+    <body id="body">
+        <button onclick="show('div1')" id="pg1">WHAT IS ALCOHOL ADDICTION ?</button>
+        <button onclick="show('div2')" id="pg2">CAUSES OF ALCOHOL ADDICTION</button>
+        <button onclick="show('div3')" id="pg3">HOW CAN YOU AVOID GETTING ALCOHOL ADDICTED</button>
+    </body>
+    <body>
+        <div id="div1">
+            <h1 class="heading">WHAT IS ADDICTION?</h1>
+            <h2>Addiction is an inability to stop using a substance or engaging in a behavior even though it is causing psychological 
+                and physical harm. The term addiction does not only refer to dependence on substances such as heroin or cocaine.Addiction 
+                is a treatable, chronic medical disease involving complex interactions among brain circuits, genetics, the environment, and
+                an individual’s life experiences. People with addiction use substances or engage in behaviors that become compulsive and 
+                often continue despite harmful consequences. </h2>
+                <br>
+            <h1 class="heading">SYMPTOMS OF ALCOHOL ADDICTION</h1>  
+            <img id="img1" src="https://www.conehealth.com/app/files/public/7-Things-Drinking-Alcohol-Does-to-Your-Body.jpg"> 
+            <h2>• Being unable to stop or limit the amount of alcohol consumption.<br>
+                • Spending a lot of time to drink alcohol.<br>
+                • Putting alcohol above other personal responsibilities.<br>
+                • Feeling urge to drink more alcohol.<br>
+                • Avoiding the contact of close people.<br>
+                • Wasting a lot of time or money just to drink alcohol.<br>
+                • Being aggressive without drinking it.<br>
+                • Increased lethargy, depression, or other emotional issues</h2>
+        </div>
+        <br><br>
+        <div id="div2">
+            <h1 class="heading">CAUSES OF ALCOHOL ADDICTION</h1>
+            <h2>• STRESSFUL ENVIRONMENT: If a person have a stressful work, he may be likely to drink more alcohol to get relief from 
+                  the stress. Stress may not be always from work or job, it may grow from family problem, health problem or relation problem
+                  etc.<br>
+                • DRINKING JUST TO HAVE THE TASTE: Few teenagers and adults just drink alcoholic beverage just to know the taste for the
+                  first time. Sometime this kind of curiosity makes the habit and after that addiction.<br>
+                • DRINKING AT AN EARLY AGE: Research says that those who drink at an early age are more likely to have alcohol addiction
+                  because of not only the past habit but also the tolerance power of body increases.<br>
+                • MENTAL HEALTH ISSUES: Any kind of mental problem like depression, anxiety, bipolar disorder etc. increase the tendency 
+                  of alcoholism. Drinking alcohol is the instant and temporary solution of getting rid of mental issue so, most of the 
+                  people try this instant method.<br>
+                • TAKING ALCOHOL WITH MEDICATION: Many people take drugs with alcohol. It’s a very common practice. Some medicine can 
+                  increase the toxicity of alcohol. Even sometime it can be very dangerous.<br>
+                • GENETIC ISSUES: Family history plays a major role to decide that one person will be alcohol addicted or not. This is a 
+                  simple biological process as we all know that the characteristics can be transmitted from parental generation to the next
+                  generation through DNA.<br>
+                • LACK OF ATTENTION FROM FAMILY: A lack of support from family or parents can lead a child to be alcohol addicted. Financial
+                  condition of the family also can effect on it</h2>
+        </div>
+        <br><br>
+        <div id="div3">
+            <h1 class="heading"> HOW TO AVOID ALCOHOL ADDICTION </h1>
+            <br>
+            <h2> Think about why you drink </h2>
+            <h3>Maybe your concerns center around your reasons for drinking rather than the amount.
+               Plenty of people use alcohol to numb emotional pain or face stressful situations more easily.
+               It’s common to drink to lighten tension on a first date or before a difficult conversation. 
+               She goes on to explain that knowing the reasons behind your alcohol use — relationship stress,
+                trouble at work, insomnia, or anything else — can help you explore alternative ways to address those issues more productively.
+              </h3>
+             <h2> Involve your loved ones</h2>
+             <h3>Family and friends can provide encouragement and support when you stop drinking.
+              Maybe your partner, sibling, or roommate is also thinking about making a change.
+               Changing drinking habits together allows you to support each other while also boosting your motivation and accountability.
+               Building new relationships with people who also choose to avoid alcohol can have a lot of benefit.
+             </h3>  
+             <h2> Change your enviroment </h2>
+             <h3>You may not need to completely reinvent your life to quit drinking, but a few changes in your surroundings can make a big difference.
+             </h3>
+             <h2> Get rid of your alcohol </h2> 
+             <h3> Alcohol in your house can tempt you when you’re trying to quit. 
+              If you live with roommates, consider asking them to keep their alcohol out of sight instead of in shared open spaces.
+            </h3>
+              <h2> Vary your routine</h2>
+              <h3> When you tend to drink at a certain time of day, doing something else is one of the best ways to break that pattern.
+                Instead of going to your usual restaurant , try going to a new place that doesn't serve alcoho. 
+                If you usually meet friends for a drink after work , try going to alcohol free spaces  
+              </h3>
+              <h2> Rediscover hobbies </h2>
+              <h3> Satisfying hobbies can distract you from wanting to drink, but they also help you relax — something everyone needs to do.
+                If you’ve recently found yourself longing to get back into an old hobby, now’s the time to go for it.
+              </h3>
+              <h2> Reach out for support</h2>
+              <h3> If you feel comfortable doing so, bring up your challenges to your primary healthcare provider.
+                 Finding a therapist can also be a great starting point if you aren’t comfortable opening up to your healthcare provider.
+                 It might also be worth checking out a 12-step program in your area, like Alcoholics Anonymous or SMART Recovery,
+                  to see if it feels like something that might be useful for you.</h3>
+        </div>
+    </body>
+    <script>
+      
+      document.getElementById("div1").style.display="block"
+      document.getElementById("div2").style.display="none"
+      document.getElementById("div3").style.display="none"
+
+      function show (pagename) {
+        document.getElementById("div1").style.display="none"
+        document.getElementById("div2").style.display="none"
+        document.getElementById("div3").style.display="none"
+        document.getElementById(pagename).style.display="block"
+      }
+    </script>
+</html>
